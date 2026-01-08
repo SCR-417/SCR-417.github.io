@@ -22,16 +22,18 @@ toggleBtn.addEventListener("click", () => {
 const reveals = document.querySelectorAll(".reveal");
 
 const observer = new IntersectionObserver(
-    entries => {
+    (entries) => {
         entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
+            entry.target.classList.add("active");
+            // observer.unobserve(entry.target);
+        } else {
+            entry.target.classList.remove("active");
         }
         });
     },
     {
-        threshold: 0.15
+        threshold: 0.20
     }
 );
 
