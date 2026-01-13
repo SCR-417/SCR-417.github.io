@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal Web Platform — Test Data and Performance Analytics</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="top-bar">
+    <!-- <a href="../index.html" class="back-link">← Back</a> -->
+    <!-- From Uiverse.io by karthik092726122003 --> 
+    <a href="../index.html">
+    <div class="styled-wrapper">
+    <button class="button">
+        <div class="button-box">
+        <span class="button-elem">
+            <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="arrow-icon"
+            >
+            <path
+                style="fill: var(--muted-text)"
+                d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+            ></path>
+            </svg>
+        </span>
+        <span class="button-elem">
+            <svg
+            style="fill: var(--hrefBtn-color)"
+            viewBox="0 0  24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="arrow-icon"
+            >
+            <path
+                d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+            ></path>
+            </svg>
+        </span>
+        </div>
+    </button>
+    </div>
+    </a>
+
+
+    <button id="theme-toggle" class="theme-toggle">
+        Light Theme
+    </button>
+</header>
+
+    <main class="project-page">
+
+    <!-- Project intro -->
+    <header class="project-header">
+        <h1>Internal Web Platform — Test Data and Performance Analytics</h1>
+        <p class="project-summary">
+        As test automation increased, the volume of empirical data grew rapidly. 
+        I developed a dedicated web platform to ensure that this data was not only 
+        stored, but also easily accessible, comparable, and actionable.</p>
+
+        <p>The platform collects and classifies data from all tests and 
+        stores it in a structured database, allowing authorized users to explore 
+        pump performance across different models and operating conditions.</p>
+    </header>
+
+    <!-- Image gallery -->
+    <section class="project-gallery">
+        <div class="carousel">
+            <div class="carousel-track">
+                <figure class="carousel-slide">
+                    <img src="../assets/GUI.png" alt="Test bench overview">
+                    <figcaption>GUI overview</figcaption>
+                </figure>
+                
+                <figure class="carousel-slide">
+                    <img src="../assets/Novus.jpg" alt="Test bench overview">
+                    <figcaption>Novus view</figcaption>
+                </figure>
+
+                <figure class="carousel-slide">
+                    <img src="../assets/Stepper.jpg" alt="Test bench overview">
+                    <figcaption>Stepper view</figcaption>
+                </figure>
+            </div>
+
+            <button class="carousel-btn prev">‹</button>
+            <button class="carousel-btn next">›</button>
+
+            <div class="carousel-ui">
+                <span class="carousel-caption"></span>
+                <span class="carousel-counter"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed content -->
+    <section class="project-content">
+        <article>
+            <h2>Technical architecture</h2>
+            <p>I was responsible for the complete technical design and implementation of the system, covering:</p>
+            <ul>
+                <li>Backend: Python + FastAPI</li>
+                <li>Database: PostgreSQL</li>
+                <li>Frontend: Custom HTML/CSS/JavaScript interface</li>
+                <li>Server: Ubuntu Server running on a local virtual machine</li>
+            </ul>
+            <p>Users can visualize performance data in real time, compare datasets, 
+            and automatically generate Excel files with selected comparisons 
+            for sharing and reporting purposes.</p>
+        </article>
+
+        <article>
+            <h2>Value generated</h2>
+            <ul>
+                <li>Centralized, structured empirical knowledge base</li>
+                <li>Faster performance comparisons</li>
+                <li>Improved traceability of test results</li>
+                <li>Support for data-driven product decisions</li>
+            </ul>
+        </article>
+    </section>
+
+    </main>
+
+<script src="../script.js"></script>
+</body>
+</html>

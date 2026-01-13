@@ -122,19 +122,67 @@
                     and product validation passed through this system.</li>
             </ul>
         </article>
+
         <article>
-            <h2>System Architecture</h2>
-            <p>
-            The system is composed of pressure, flow, and temperature, rotational speed 
-            sensors, a PLC-based control unit, and a Python application for monitoring.
-            </p>
+            <h2>Technical implementation</h2>
+            <p>At the core of the project is a custom-developed control and acquisition platform, 
+            designed and programmed from scratch.
+            
+            <p>The system integrates multiple sensors (pressure, flow, electrical variables) with the electrical 
+            and mechanical components of the test bench. Data is acquired in real time and processed by 
+            software developed in Python and C++, depending on performance requirements.</p>
+            
+            <p>Closed-loop control plays a central role. I implemented multiple PID controllers, including:</p>
+            <ul>
+                <li>Input voltage control for test stability</li>
+                <li>Fully automated control of the gate valve, allowing test sequences to run without manual intervention</li>
+            </ul>
+            <p>Test protocols can be executed automatically, ensuring repeatability, safety, and consistency across experiments.</p>
         </article>
 
         <article>
-        <p>
-        Special care was taken to ensure measurement repeatability and
-        automated report generation.
-        </p>
+            <h2>GUI</h2>
+            <p>To operate the system, I developed a custom GUI from scratch, 
+            which acts as the central interface for the entire laboratory.</p>
+            <p>Through the GUI, users can:</p>
+            <ul>
+                <li>Monitor all sensor data in real time</li>
+                <li>Control actuators and PLC-driven elements</li>
+                <li>Launch automated test sequences</li>
+                <li>Visualize performance curves and key metrics</li>
+                <li>Compare live test data against previously acquired datasets</li>
+            </ul>
+            <p>This interface replaced fragmented tools and manual procedures, 
+            centralizing all laboratory operations in a single, intuitive platform.</p>
+        </article>
+
+        <article>
+            <h2>Data visualization and decision-making</h2>
+            <p>Beyond basic monitoring, I developed tools to visualize and compare results 
+            instantly, both in real time and against historical data.</p>
+            <p>This made it possible to:</p>
+            <ul>
+                <li>Identify performance trends immediately</li>
+                <li>Detect anomalies during tests instead of post-processing</li>
+                <li>Make faster decisions at both the technical and managerial level</li>
+            </ul>
+            <p>The shift from delayed analysis to near-instant feedback 
+            significantly changed how R&D decisions were made within the company.</p>
+        </article>
+
+        <article>
+            <h2>Impact and results</h2>
+            <p>The combined effect of automation, software integration, 
+                and data visualization led to measurable improvements:</p>
+            <ul>
+                <li>Testing time reduced by more than 500%</li>
+                <li>Immediate availability of clean, structured data</li>
+                <li>Increased test repeatability and reliability</li>
+                <li>Faster iteration cycles in product development</li>
+                <li>Stronger alignment between R&D, production, and management</li>
+            </ul>
+            <p>This project became a reference point for how future 
+                testing and development work is structured at Bombas Rowa.</p>
         </article>
     </section>
 

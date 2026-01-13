@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal Web Tool — Gantt Diagram Viewer (Intranet)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header class="top-bar">
+    <!-- <a href="../index.html" class="back-link">← Back</a> -->
+    <!-- From Uiverse.io by karthik092726122003 --> 
+    <a href="../index.html">
+    <div class="styled-wrapper">
+    <button class="button">
+        <div class="button-box">
+        <span class="button-elem">
+            <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="arrow-icon"
+            >
+            <path
+                style="fill: var(--muted-text)"
+                d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+            ></path>
+            </svg>
+        </span>
+        <span class="button-elem">
+            <svg
+            style="fill: var(--hrefBtn-color)"
+            viewBox="0 0  24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="arrow-icon"
+            >
+            <path
+                d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"
+            ></path>
+            </svg>
+        </span>
+        </div>
+    </button>
+    </div>
+    </a>
+
+
+    <button id="theme-toggle" class="theme-toggle">
+        Light Theme
+    </button>
+</header>
+
+    <main class="project-page">
+
+    <!-- Project intro -->
+    <header class="project-header">
+        <h1>Internal Web Platform — Test Data and Performance Analytics</h1>
+        <p class="project-summary">
+        During project planning and coordination, I identified a recurring issue: 
+        most employees did not have access to licensed Gantt diagram software, 
+        which created communication bottlenecks and unnecessary dependencies.</p>
+
+        <p>To solve this, I designed and developed a web-based Gantt diagram 
+        viewer, accessible to anyone connected to the company’s internal network.</p>
+
+        <p>The tool allows users to view only the diagrams relevant to their role 
+        or department, improving transparency while keeping information structured.</p>
+    </header>
+
+    <!-- Image gallery -->
+    <section class="project-gallery">
+        <div class="carousel">
+            <div class="carousel-track">
+                <figure class="carousel-slide">
+                    <img src="../assets/GUI.png" alt="Test bench overview">
+                    <figcaption>GUI overview</figcaption>
+                </figure>
+                
+                <figure class="carousel-slide">
+                    <img src="../assets/Novus.jpg" alt="Test bench overview">
+                    <figcaption>Novus view</figcaption>
+                </figure>
+
+                <figure class="carousel-slide">
+                    <img src="../assets/Stepper.jpg" alt="Test bench overview">
+                    <figcaption>Stepper view</figcaption>
+                </figure>
+            </div>
+
+            <button class="carousel-btn prev">‹</button>
+            <button class="carousel-btn next">›</button>
+
+            <div class="carousel-ui">
+                <span class="carousel-caption"></span>
+                <span class="carousel-counter"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed content -->
+    <section class="project-content">
+        <article>
+            <h2>Technical details</h2>
+            <p>The application was developed as a full-stack solution:</p>
+            <ul>
+                <li>Backend: Python + FastAPI</li>
+                <li>Frontend: HTML, CSS, JavaScript</li>
+                <li>Access control based on IP validation</li>
+                <li>Server: Ubuntu Server running on a local virtual machine</li>
+            </ul>
+            <p>By hosting the service on a VM running on my desktop workstation, 
+                the tool avoids using the corporate server while <strong> 
+                leveraging otherwise underutilized hardware resources</strong>.</p>
+        </article>
+
+        <article>
+            <h2>Impact</h2>
+            <ul>
+                <li>Elimination of license-related limitations</li>
+                <li>Reduced communication friction between departments</li>
+                <li>Improved project visibility and alignment</li>
+                <li>Better use of existing IT resources</li>
+            </ul>
+        </article>
+    </section>
+
+    </main>
+
+<script src="../script.js"></script>
+</body>
+</html>
