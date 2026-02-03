@@ -96,6 +96,7 @@ footer {
 
 p{
     color: var(--muted-text);
+    line-height: 1.5;
 }
 
 
